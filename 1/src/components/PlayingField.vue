@@ -24,9 +24,11 @@ withDefaults(defineProps<Props>(), {
 <style>
 .playingfield {
   border-radius: 50%;
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 1.4rem;
+  height: 1.4rem;
   border: 0.188rem solid #000;
+
+  @apply sm:w-[2.3rem] sm:h-[2.3rem] md:w-[3.125rem] md:h-[3.125rem];
 
   &.green {
     @apply bg-green-700;

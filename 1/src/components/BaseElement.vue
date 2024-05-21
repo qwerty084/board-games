@@ -18,7 +18,7 @@ withDefaults(defineProps<Props>(), {
       <PlayingField :fieldColor="$props.color" />
       <PlayingField :fieldColor="$props.color" />
     </div>
-    <div :class="['flex h-full justify-center items-center mx-auto font-bold text-xl', rotationClass]">B</div>
+    <div :class="['flex h-full justify-center items-center mx-auto font-bold text-2xl', rotationClass]">B</div>
     <div class="flex flex-col gap-4">
       <PlayingField :fieldColor="$props.color" />
       <PlayingField :fieldColor="$props.color" />
