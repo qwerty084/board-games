@@ -8,14 +8,12 @@ jobs:
         defaults:
             run:
                 working-directory: ./1
-
         steps:
             - uses: actions/checkout@v4
             - name: Use Node.js 18
               uses: actions/setup-node@v4
               with:
                   node-version: 18
-
             - name: npm install
               run: npm ci
             - name: check code style
