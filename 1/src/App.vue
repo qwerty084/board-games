@@ -14,8 +14,7 @@ import TheBoard from "./components/TheBoard.vue";
 main {
   border: 3px solid red;
   @apply rounded;
-  height: 800px;
-  width: 800px;
+  max-width: 800px;
 }
 
 .outer {

@@ -5,17 +5,19 @@ interface Props {
   fieldColor: Color;
   text?: string;
   textColor?: "white" | "black";
+  rotationClass?: string;
 }
 
 withDefaults(defineProps<Props>(), {
   text: "",
   textColor: "black",
+  rotationClass: "",
 });
 </script>
 
 <template>
-  <div :class="['playingfield flex justify-center items-center', $props.fieldColor]">
-    <span :class="['font-bold field-color', $props.textColor]">{{ $props.text }}</span>
+  <div :class="['playingfield flex justify-center items-center', fieldColor]">
+    <span :class="['font-bold field-color', textColor, rotationClass]">{{ text }}</span>
   </div>
 </template>
 
@@ -40,6 +42,10 @@ withDefaults(defineProps<Props>(), {
 
   &.red {
     @apply bg-red-600;
+  }
+
+  &.white {
+    @apply bg-slate-50;
   }
 }
 
