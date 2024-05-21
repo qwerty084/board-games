@@ -5,9 +5,10 @@ on: [push, pull_request]
 jobs:
     tests:
         runs-on: ubuntu-latest
-            defaults:
-                run:
-                    working-directory: ./1
+        defaults:
+            run:
+                working-directory: ./1
+
         steps:
             - uses: actions/checkout@v4
             - name: Use Node.js 18
