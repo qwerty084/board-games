@@ -2,9 +2,14 @@
 import type { Color } from "@/types/Colors";
 import PlayingField from "./PlayingField.vue";
 
-defineProps<{
+interface Props {
   color: Color;
-}>();
+  rotationClass?: string;
+}
+
+withDefaults(defineProps<Props>(), {
+  rotationClass: "",
+});
 </script>
 
 <template>
@@ -13,7 +18,7 @@ defineProps<{
       <PlayingField :fieldColor="$props.color" />
       <PlayingField :fieldColor="$props.color" />
     </div>
-    <div class="flex h-full justify-center items-center mx-auto font-bold text-xl">B</div>
+    <div :class="['flex h-full justify-center items-center mx-auto font-bold text-2xl', rotationClass]">B</div>
     <div class="flex flex-col gap-4">
       <PlayingField :fieldColor="$props.color" />
       <PlayingField :fieldColor="$props.color" />

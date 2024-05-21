@@ -5,26 +5,30 @@ interface Props {
   fieldColor: Color;
   text?: string;
   textColor?: "white" | "black";
+  rotationClass?: string;
 }
 
 withDefaults(defineProps<Props>(), {
   text: "",
   textColor: "black",
+  rotationClass: "",
 });
 </script>
 
 <template>
-  <div :class="['playingfield flex justify-center items-center', $props.fieldColor]">
-    <span :class="['font-bold field-color', $props.textColor]">{{ $props.text }}</span>
+  <div :class="['playingfield flex justify-center items-center', fieldColor]">
+    <span :class="['font-bold field-color', textColor, rotationClass]">{{ text }}</span>
   </div>
 </template>
 
 <style>
 .playingfield {
   border-radius: 50%;
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 1.4rem;
+  height: 1.4rem;
   border: 0.188rem solid #000;
+
+  @apply sm:w-[2.3rem] sm:h-[2.3rem] md:w-[3.125rem] md:h-[3.125rem];
 
   &.green {
     @apply bg-green-700;
@@ -40,6 +44,10 @@ withDefaults(defineProps<Props>(), {
 
   &.red {
     @apply bg-red-600;
+  }
+
+  &.white {
+    @apply bg-slate-50;
   }
 }
 
