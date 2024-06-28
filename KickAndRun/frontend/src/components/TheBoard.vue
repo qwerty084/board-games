@@ -25,7 +25,7 @@ import PlayingField from "./PlayingField.vue";
         <PlayingField field-color="white" />
         <PlayingField field-color="white" />
       </div>
-      <div class="absolute -right-[5.5rem] text-7xl rotate-90 top-3">&xrarr;</div>
+      <div class="absolute -right-[100px] top-[20px] text-7xl rotate-90 top-3">&xrarr;</div>
     </div>
     <BaseElement color="green" class="ml-auto" rotation-class="rotate-180" />
     <div class="flex justify-between w-[85%] -rotate-90 relative">
@@ -47,7 +47,7 @@ import PlayingField from "./PlayingField.vue";
         <PlayingField field-color="white" />
         <PlayingField field-color="white" />
       </div>
-      <div class="absolute -right-[5.5rem] text-7xl rotate-90 top-3">&xrarr;</div>
+      <div class="absolute -right-[100px] top-[20px] text-7xl rotate-90 top-3">&xrarr;</div>
     </div>
     <div class="flex flex-col w-[85%] justify-around">
       <div class="flex justify-between">
@@ -84,7 +84,7 @@ import PlayingField from "./PlayingField.vue";
         <PlayingField field-color="white" />
         <PlayingField field-color="white" />
       </div>
-      <div class="absolute -right-[5.5rem] text-7xl rotate-90 top-3">&xrarr;</div>
+      <div class="absolute -right-[100px] top-[20px] text-7xl rotate-90 top-3">&xrarr;</div>
     </div>
     <BaseElement color="black" class="mr-auto mt-auto" />
     <div class="flex justify-between w-[85%] rotate-180">
@@ -106,7 +106,7 @@ import PlayingField from "./PlayingField.vue";
         <PlayingField field-color="white" />
         <PlayingField field-color="white" />
       </div>
-      <div class="absolute -right-[5.5rem] text-7xl rotate-90 top-3">&xrarr;</div>
+      <div class="absolute -right-[100px] top-[20px] text-7xl rotate-90 top-3">&xrarr;</div>
     </div>
     <BaseElement color="red" class="ml-auto mt-auto" rotation-class="-rotate-90" />
   </div>
